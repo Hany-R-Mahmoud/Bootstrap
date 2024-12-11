@@ -1,0 +1,32 @@
+body {
+  font-family: "Roboto", serif;
+}
+
+$dark: #19283f;
+$green: #33d1cc;
+$red: #ff3150;
+$yellow: #ffc400;
+$section: #eff7fa;
+
+.main-btn {
+  background-color: $red;
+  color: $yellow;
+  padding: 0.5rem 1rem;
+  border: none;
+  transition: 0.3s;
+  &:hover {
+    background-color: $green;
+    color: white;
+  }
+}
+
+.main-title::after {
+  content: "";
+  position: absolute;
+  background-color: $green;
+  width: 120px;
+  height: 2px;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}

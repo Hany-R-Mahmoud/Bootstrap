@@ -1,0 +1,194 @@
+@use "./SASS/Layout/global-variables" as *;
+
+/* Start Navbar */
+.navbar {
+  background-color: $dark;
+  .navbar-toggler {
+    &[aria-expanded="true"] {
+      border-color: $green;
+    }
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .navbar-nav {
+    .nav-link {
+      color: white;
+      &.active,
+      &:focus,
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+  .search {
+    border-left: 1px solid $green;
+    svg {
+      color: $green;
+    }
+  }
+}
+/* End Navbar */
+/* Start Landing */
+.landing {
+  background-color: $dark;
+  min-height: calc(100vh - 72px);
+}
+/* End Landing */
+/* Start Features */
+.features {
+  .icon-holder {
+    height: 200px;
+    svg {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .number {
+      font-size: 12rem;
+      color: $section;
+    }
+    .icon {
+      color: $green;
+    }
+  }
+  h4 {
+    color: $yellow;
+  }
+}
+/* End Features */
+/* Start Our Work Section */
+.our-work {
+  background-color: $section;
+  ul {
+    .active {
+      background-color: $red;
+      color: $yellow;
+    }
+    li {
+      padding: 0.5rem 1rem;
+      cursor: pointer;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      transition: 0.5s;
+      &:not(.active):hover {
+        color: $red;
+      }
+    }
+  }
+  .row {
+    .box {
+      padding: 5px;
+      overflow: hidden;
+      &::before {
+        content: attr(data-work);
+        position: absolute;
+        background-color: $green;
+        opacity: 0.7;
+        width: calc(100% - 10px);
+        height: calc(100% - 10px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        color: white;
+        transition: 0.5s;
+        font-size: 5rem;
+        transform: translateX(calc(-100% - 5px));
+      }
+      &:hover::before {
+        transform: translateX(0);
+      }
+    }
+  }
+}
+
+/* End Our Work Section */
+/* Start Stuff Section */
+.stuff {
+  .description {
+    max-width: 400px;
+  }
+}
+/* End Stuff Section */
+/* Start Our-team section */
+.our-team {
+  background-color: $section;
+  h2 {
+    color: $yellow;
+  }
+  figcaption {
+    background-color: $green;
+    color: white;
+  }
+}
+/* End Our-team section */
+/* Start project section */
+.project {
+  background-color: $dark;
+}
+/* End project section */
+/* Start Subscribe section */
+.subscribe {
+  background-color: $yellow;
+  input[type="text"] {
+    border: none;
+    border-bottom: 1px solid white;
+    &:focus {
+      outline: none;
+    }
+  }
+  &::-webkit-input-placeholder {
+    color: white;
+  }
+  &::-moz-placeholder {
+    color: white;
+  }
+  &:-ms-input-placeholder {
+    color: white;
+  }
+  &::-ms-input-placeholder {
+    color: white;
+  }
+  &::placeholder {
+    color: white;
+  }
+  input[type="submit"] {
+    background-color: $dark;
+    color: $yellow;
+  }
+}
+/* End Subscribe section */
+/* Start Footer */
+.footer {
+  background-color: $dark;
+  .copyright {
+    span {
+      color: $yellow;
+    }
+
+    & > span {
+      color: $green;
+    }
+  }
+  .contact ul svg {
+    width: 20px;
+    height: 20px;
+  }
+  .contact ul {
+    .facebook {
+      background-color: #1877f2;
+    }
+    .twitter {
+      background-color: #1da1f2;
+    }
+    .linkedin {
+      background-color: #0077b5;
+    }
+    .youtube {
+      background-color: #ff0000;
+    }
+  }
+}
+/* End Footer */
