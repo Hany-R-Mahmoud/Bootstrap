@@ -13,7 +13,7 @@ Here's an example:
 ## Table of Contents
 
 1. [Description](#description)
-2. [Usage](#usage)
+2. [Technologies](#Technologies)
 3. [Features](#features)
 4. [Contributing](#contributing)
 5. [Acknowledgements](#acknowledgements)
