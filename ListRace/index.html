@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ListRace</title>
+    <link
+      rel="shortcut icon"
+      type="image/icon"
+      href="./dist/assets/images/logo/favicon.png"
+    />
+    <link rel="stylesheet" href="./dist/css/main.css" />
+    <link rel="stylesheet" href="./dist/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-lg bg-light sticky-top py-4">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">List<span>Race</span> </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span>
+            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-xmark" style="display: none"></i>
+          </span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#works">HOW IT WORKS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#explore">EXPLORE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#review">REVIEW</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#blog">BLOG</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <!-- Start Home -->
+    <div class="home" id="home">
+      <div class="container py-5 d-flex flex-column gap-2">
+        <div class="text-box p-5 text-center">
+          <h1 class="text-uppercase fw-bold text-light p-5">
+            best place to find and explore that all you need
+          </h1>
+          <p class="text-capitalize text-light fw-bold fs-5">
+            Find Best Place, Restaurant, Hotel, Real State and many more <br />
+            think in just One click
+          </p>
+        </div>
+        <div class="row search-box d-flex justify-content-between p-5 gap-2">
+          <form
+            class="col-md-5 col-lg-4 flex-grow-1 border bg-light rounded d-flex p-3"
+          >
+            <span>What?</span>
+            <input
+              id="what"
+              name="what"
+              class="border-0"
+              type="search"
+              placeholder="Ex: Place,Restaurant,Food"
+            />
+            <i class="fa-solid fa-list-ul"></i>
+          </form>
+          <form
+            class="col-md-5 col-lg-4 flex-grow-1 border bg-light rounded d-flex p-3"
+          >
+            <span>Location</span>
+            <input
+              id="location"
+              name="location"
+              class="border-0"
+              type="search"
+              placeholder="Ex: London, Newyork, Rome"
+            />
+            <i class="fa-solid fa-location-crosshairs"></i>
+          </form>
+          <button
+            class="btn rounded-pill text-light align-right btn-danger col-lg-2 p-2"
+          >
+            Search
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- End Home -->
+    <!-- Start Facilities -->
+    <div class="facilities" id="facilities">
+      <div class="container">
+        <div class="row gap-2 justify-content-center text-center pt-1">
+          <div class="col-lg-2 col-md-4 card shadow-sm">
+            <i class="fa-solid fa-shop fa-3x p-3"></i>
+            <div class="card-body">
+              <h5 class="card-title">Restaurant</h5>
+              <p class="card-text">150 listing</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 card shadow-sm">
+            <i class="fa-solid fa-tree-city fa-3x p-3"></i>
+            <div class="card-body">
+              <h5 class="card-title">Destination</h5>
+              <p class="card-text">214 listing</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 card shadow-sm">
+            <i class="fa-solid fa-hotel fa-3x p-3"></i>
+            <div class="card-body">
+              <h5 class="card-title">Hotels</h5>
+              <p class="card-text">185 listing</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 card shadow-sm">
+            <i class="fa-solid fa-hospital fa-3x p-3"></i>
+            <div class="card-body">
+              <h5 class="card-title">Health-care</h5>
+              <p class="card-text">200</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4 card shadow-sm">
+            <i class="fa-solid fa-car fa-3x p-3"></i>
+            <div class="card-body">
+              <h5 class="card-title">Automation</h5>
+              <p class="card-text">120 listing</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Facilities -->
+    <!-- Start Work -->
+    <div class="works" id="works">
+      <div class="container py-5">
+        <div class="text-box py-5 text-center">
+          <h2 class="pt-5 text-uppercase fs-4">how it works</h2>
+          <p class="text-capitalize">learn more about how our works</p>
+        </div>
+        <div class="row d-flex gap-lg-3 justify-content-center">
+          <div class="card col-lg-3 d-flex align-items-center p-3 shadow-sm">
+            <i class="fa-regular fa-lightbulb fs-2 p-3"></i>
+            <div class="card-body text-center">
+              <h5 class="card-title">Choose what to Do</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
+                sit, esse ad tenetur debitis voluptatum odit
+              </p>
+              <a href="#work" class="btn">Read More</a>
+            </div>
+          </div>
+          <div class="card col-lg-3 d-flex align-items-center p-3 shadow-sm">
+            <i class="fa-solid fa-binoculars fs-2 p-3"></i>
+            <div class="card-body text-center">
+              <h5 class="card-title">Find what you want</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
+                sit, esse ad tenetur debitis
+              </p>
+              <a href="#work" class="btn">Read More</a>
+            </div>
+          </div>
+          <div class="card col-lg-3 d-flex align-items-center p-3 shadow-sm">
+            <i class="fa-solid fa-map-location-dot fs-2 p-3"></i>
+
+            <div class="card-body text-center">
+              <h5 class="card-title">Explore amazing places</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
+                sit, esse ad tenetur amet cons
+              </p>
+              <a href="#work" class="btn">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Work -->
+    <!-- Start Explore -->
+    <div class="explore" id="explore">
+      <div class="container py-5">
+        <div class="text-box py-5 text-center">
+          <h2 class="pt-5 text-uppercase fs-4">explore</h2>
+          <p class="text-capitalize">
+            explore new places, food, culture around the world and many more
+          </p>
+        </div>
+        <div class="row justify-content-between gap-2">
+          <div class="card col-md-5 col-lg-3 flex-lg-grow-1 flex-md-grow-1 p-0">
+            <img
+              src="https://ik.imagekit.io/hrim/ListRace/explore/e1.jpg?updatedAt=1732695793479"
+              class="card-img-top img-fluid"
+              data-local-path="./dist/assets/images/explore/e1.jpg"
+              alt="explore-1"
+            />
+            <div class="card-body">
+              <h5>Tommy Helfinger Bar</h5>
+              <div
+                class="rating py-3 d-flex justify-content-between align-items-center"
+              >
+                <span class="p-1 rounded">5.0</span>
+                <a href="#" class="text-decoration-none">10 Ratings</a>|<span
+                  >From <span class="price">5$-300$</span></span
+                >|<a href="#" class="text-decoration-none">Restaurant</a>
+              </div>
+              <div
+                class="comment d-flex border-bottom justify-content-center align-items-start gap-2 pb-2"
+              >
+                <img
+                  src="https://ik.imagekit.io/hrim/ListRace/explore/person.png?updatedAt=1732695796610"
+                  alt="person"
+                  class="img-fluid"
+                  data-local-path="./dist/assets/images/explore/person.png"
+                />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                  fuga delectus praesentium maxime odio veniam voluptatum saepe
+                  non, perferendis iusto perspiciatis odit ex corrupti enim. Ut
+                  aperiam inventore tempore debitis?
+                </p>
+              </div>
+              <div class="footer pt-4 d-flex justify-content-between">
+                <a href="#" class="text-decoration-none close-now">Close Now</a>
+                <div class="icon-box">
+                  <a href="#"><i class="fa-solid fa-location-dot"></i></a>
+                  <a href="#"><i class="fa-solid fa-upload"></i></a>
+                  <a href="#"><i class="fa-regular fa-heart"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card col-md-5 col-lg-3 flex-lg-grow-1 flex-md-grow-1 p-0">
+            <img
+              src="https://ik.imagekit.io/hrim/ListRace/explore/e2.jpg?updatedAt=1732695793483"
+              class="card-img-top img-fluid"
+              data-local-path="./dist/assets/images/explore/e2.jpg"
+              alt="explore-2"
+            />
+            <div class="card-body">
+              <h5>Swim And Dine Resort</h5>
+              <div
+                class="rating py-3 d-flex justify-content-between align-items-center"
+              >
+                <span class="p-1 rounded">4.5</span>
+                <a href="#" class="text-decoration-none">8 Ratings</a>|<span
+                  >From <span class="price">50$-500$</span></span
+                >|<a href="#" class="text-decoration-none">Hotel</a>
+              </div>
+              <div
+                class="comment d-flex border-bottom justify-content-center align-items-start gap-2 pb-2"
+              >
+                <img
+                  src="https://ik.imagekit.io/hrim/ListRace/explore/person.png?updatedAt=1732695796610"
+                  alt="person"
+                  class="img-fluid"
+                  data-local-path="./dist/assets/images/explore/person.png"
+                />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                  fuga delectus praesentium maxime odio veniam voluptatum saepe
+                  non, perferendis iusto perspiciatis odit ex corrupti enim. Ut
+                  aperiam inventore tempore debitis?
+                </p>
+              </div>
+              <div class="footer pt-4 d-flex justify-content-between">
+                <a href="#" class="text-decoration-none open-now">Open Now</a>
+                <div class="icon-box">
+                  <a href="#"><i class="fa-solid fa-location-dot"></i></a>
+                  <a href="#"><i class="fa-solid fa-upload"></i></a>
+                  <a href="#"><i class="fa-regular fa-heart"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card col-md-5 col-lg-3 flex-lg-grow-1 flex-md-grow-1 p-0">
+            <img
+              src="https://ik.imagekit.io/hrim/ListRace/explore/e3.jpg?updatedAt=1732695795897"
+              class="card-img-top img-fluid"
+              data-local-path="./dist/assets/images/explore/e3.jpg"
+              alt="explore-3"
+            />
+            <div class="card-body">
+              <h5>Europe Tour</h5>
+              <div
+                class="rating py-3 d-flex justify-content-between align-items-center"
+              >
+                <span class="p-1 rounded">5.0</span>
+                <a href="#" class="text-decoration-none">15 Ratings</a>|<span
+                  >From <span class="price">5K$-10K$</span></span
+                >|<a href="#" class="text-decoration-none">Destination</a>
+              </div>
+              <div
+                class="comment d-flex border-bottom justify-content-center align-items-start gap-2 pb-2"
+              >
+                <img
+                  src="https://ik.imagekit.io/hrim/ListRace/explore/person.png?updatedAt=1732695796610"
+                  alt="person"
+                  class="img-fluid"
+                  data-local-path="./dist/assets/images/explore/person.png"
+                />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                  fuga delectus praesentium maxime odio veniam voluptatum saepe
+                  non, perferendis iusto perspiciatis odit ex corrupti enim. Ut
+                  aperiam inventore tempore debitis?
+                </p>
+              </div>
+              <div class="footer pt-4 d-flex justify-content-between">
+                <a href="#" class="text-decoration-none close-now">Close Now</a>
+                <div class="icon-box">
+                  <a href="#"><i class="fa-solid fa-location-dot"></i></a>
+                  <a href="#"><i class="fa-solid fa-upload"></i></a>
+                  <a href="#"><i class="fa-regular fa-heart"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card col-md-5 col-lg-3 flex-lg-grow-1 flex-md-grow-1 p-0">
+            <img
+              src="https://ik.imagekit.io/hrim/ListRace/explore/e4.jpg?updatedAt=1732695795855"
+              class="card-img-top img-fluid"
+              data-local-path="./dist/assets/images/explore/e4.jpg"
+              alt="explore-4"
+            />
+            <div class="card-body">
+              <h5>Banglow With Swimming Pool</h5>
+              <div
+                class="rating py-3 d-flex justify-content-between align-items-center"
+              >
+                <span class="p-1 rounded">5.0</span>
+                <a href="#" class="text-decoration-none">10 Ratings</a>|<span
+                  >From <span class="price">10K$-15K$</span></span
+                >|<a href="#" class="text-decoration-none">Real Estate</a>
+              </div>
+              <div
+                class="comment d-flex border-bottom justify-content-center align-items-start gap-2 pb-2"
+              >
+                <img
+                  src="https://ik.imagekit.io/hrim/ListRace/explore/person.png?updatedAt=1732695796610"
+                  alt="person"
+                  class="img-fluid"
+                  data-local-path="./dist/assets/images/explore/person.png"
+                />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                  fuga delectus praesentium maxime odio veniam voluptatum saepe
+                  non, perferendis iusto perspiciatis odit ex corrupti enim. Ut
+                  aperiam inventore tempore debitis?
+                </p>
+              </div>
+              <div class="footer pt-4 d-flex justify-content-between">
+                <a href="#" class="text-decoration-none close-now">Close Now</a>
+                <div class="icon-box">
+                  <a href="#"><i class="fa-solid fa-location-dot"></i></a>
+                  <a href="#"><i class="fa-solid fa-upload"></i></a>
+                  <a href="#"><i class="fa-regular fa-heart"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card col-md-5 col-lg-3 flex-lg-grow-1 flex-md-grow-1 p-0">
+            <img
+              src="https://ik.imagekit.io/hrim/ListRace/explore/e5.jpg?updatedAt=1732695796031"
+              class="card-img-top img-fluid"
+              data-local-path="./dist/assets/images/explore/e5.jpg"
+              alt="explore-5"
+            />
+            <div class="card-body">
+              <h5>Vintage Car Expo</h5>
+              <div
+                class="rating py-3 d-flex justify-content-between align-items-center"
+              >
+                <span class="p-1 rounded">4.2</span>
+                <a href="#" class="text-decoration-none">10 Ratings</a>|<span
+                  >From <span class="price">500$-1200$</span></span
+                >|<a href="#" class="text-decoration-none">Automation</a>
+              </div>
+              <div
+                class="comment d-flex border-bottom justify-content-center align-items-start gap-2 pb-2"
+              >
+                <img
+                  src="https://ik.imagekit.io/hrim/ListRace/explore/person.png?updatedAt=1732695796610"
+                  alt="person"
+                  class="img-fluid"
+                  data-local-path="./dist/assets/images/explore/person.png"
+                />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                  fuga delectus praesentium maxime odio veniam voluptatum saepe
+                  non, perferendis iusto perspiciatis odit ex corrupti enim. Ut
+                  aperiam inventore tempore debitis?
+                </p>
+              </div>
+              <div class="footer pt-4 d-flex justify-content-between">
+                <a href="#" class="text-decoration-none open-now">Open Now</a>
+                <div class="icon-box">
+                  <a href="#"><i class="fa-solid fa-location-dot"></i></a>
+                  <a href="#"><i class="fa-solid fa-upload"></i></a>
+                  <a href="#"><i class="fa-regular fa-heart"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card col-md-5 col-lg-3 flex-lg-grow-1 flex-md-grow-1 p-0">
+            <img
+              src="https://ik.imagekit.io/hrim/ListRace/explore/e6.jpg?updatedAt=1732695796459"
+              class="card-img-top img-fluid"
+              data-local-path="./dist/assets/images/explore/e6.jpg"
+              alt="explore-6"
+            />
+            <div class="card-body">
+              <h5>Thailand Tour</h5>
+              <div
+                class="rating py-3 d-flex justify-content-between align-items-center"
+              >
+                <span class="p-1 rounded">5.0</span>
+                <a href="#" class="text-decoration-none">10 Ratings</a>|<span
+                  >From <span class="price">5K$-10K$</span></span
+                >|<a href="#" class="text-decoration-none">Destination</a>
+              </div>
+              <div
+                class="comment d-flex border-bottom justify-content-center align-items-start gap-2 pb-2"
+              >
+                <img
+                  src="https://ik.imagekit.io/hrim/ListRace/explore/person.png?updatedAt=1732695796610"
+                  alt="person"
+                  class="img-fluid"
+                  data-local-path="./dist/assets/images/explore/person.png"
+                />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+                  fuga delectus praesentium maxime odio veniam voluptatum saepe
+                  non, perferendis iusto perspiciatis odit ex corrupti enim. Ut
+                  aperiam inventore tempore debitis?
+                </p>
+              </div>
+              <div class="footer pt-4 d-flex justify-content-between">
+                <a href="#" class="text-decoration-none close-now">Close Now</a>
+                <div class="icon-box">
+                  <a href="#"><i class="fa-solid fa-location-dot"></i></a>
+                  <a href="#"><i class="fa-solid fa-upload"></i></a>
+                  <a href="#"><i class="fa-regular fa-heart"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Explore -->
+    <!-- Start Reviews -->
+    <div class="review" id="review">
+      <div class="container py-5">
+        <div class="text-box py-5 text-center">
+          <h2 class="pt-5 text-uppercase fs-4">client reviews</h2>
+          <p class="text-capitalize">what out clients say about us</p>
+        </div>
+        <div class="row justify-content-between gap-2">
+          <div
+            class="client-card col-md-5 col-lg-2 flex-lg-grow-1 flex-md-grow-1 p-3 pt-5 border-0 rounded"
+          >
+            <div
+              class="card-head d-flex gap-3 align-items-center justify-content-sm-center p-3"
+            >
+              <div class="image">
+                <img
+                  src="https://ik.imagekit.io/hrim/ListRace/clients/c1.png?updatedAt=1732695792682"
+                  class=""
+                  data-local-path="./dist/assets/images/clients/c1.png"
+                  alt="client-1"
+                />
+              </div>
+              <div class="details">
+                <h5>Tom Leaker</h5>
+                <span>London, UK</span>
+                <div class="icons">
+                  <i class="fa-solid fa-splotch text-warning"></i>
+                  <i class="fa-solid fa-splotch text-warning"></i>
+                  <i class="fa-solid fa-splotch text-warning"></i>
+                  <i class="fa-solid fa-splotch text-warning"></i>
+                  <i class="fa-solid fa-splotch text-warning"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
+                voluptas recusandae ex! Quis fugit, id dolore, facere nesciunt
+                ipsam, tempore repudiandae maxime
+              </p>
+            </div>
+          </div>
+          <div
+            class="client-card col-md-5 col-lg-2 flex-lg-grow-1 flex-md-grow-1 p-3 pt-5 align-items-start border-0 rounded"
+          >
+            <div
+              class="card-head d-flex flex-row gap-3 align-items-center justify-content-sm-center p-3"
+            >
+              <div class="image">
+                <img
+                  src="https://ik.imagekit.io/hrim/ListRace/clients/c2.png?updatedAt=1732695792643"
+                  class=""
+                  data-local-path="./dist/assets/images/clients/c2.png"
+                  alt="client-2"
+                />
+              </div>
+              <div class="details">
+                <h5>Tom Leaker</h5>
+                <span>London, UK</span>
+                <div class="icons">
+                  <i class="fa-solid fa-splotch text-warning"></i>
+                  <i class="fa-solid fa-splotch text-warning"></i>
+                  <i class="fa-solid fa-splotch text-warning"></i>
+                  <i class="fa-solid fa-splotch text-warning"></i>
+                  <i class="fa-solid fa-splotch text-warning"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
+                voluptas recusandae ex! Quis fugit, id dolore, facere nesciunt
+                ipsam, tempore repudiandae maxime
+              </p>
+            </div>
+          </div>
+          <div
+            class="client-card col-md-5 col-lg-2 flex-lg-grow-1 flex-md-grow-1 p-3 pt-5 align-items-start border-0 rounded"
+          >
+            <div
+              class="card-head d-flex flex-row gap-3 align-items-center justify-content-sm-center p-3"
+            >
+              <div class="image">
+                <img
+                  src="https://ik.imagekit.io/hrim/ListRace/clients/c4.png?updatedAt=1732695792490"
+                  class=""
+                  data-local-path="./dist/assets/images/clients/c3.png"
+                  alt="client-3"
+                />
+              </div>
+              <div class="details">
+                <h5>Tom Leaker</h5>
+                <span>London, UK</span>
+                <div class="icons">
+                  <i class="fa-solid fa-splotch text-warning"></i>
+                  <i class="fa-solid fa-splotch text-warning"></i>
+                  <i class="fa-solid fa-splotch text-warning"></i>
+                  <i class="fa-solid fa-splotch text-warning"></i>
+                  <i class="fa-solid fa-splotch text-warning"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
+                voluptas recusandae ex! Quis fugit, id dolore, facere nesciunt
+                ipsam, tempore repudiandae maxime
+              </p>
+            </div>
+          </div>
+          <div
+            class="client-card col-md-5 col-lg-2 flex-lg-grow-1 flex-md-grow-1 p-3 pt-5 align-items-start border-0 rounded"
+          >
+            <div
+              class="card-head d-flex flex-row gap-3 align-items-center justify-content-sm-center p-3"
+            >
+              <div class="image">
+                <img
+                  src="https://ik.imagekit.io/hrim/ListRace/clients/c3.png?updatedAt=1732695792455"
+                  class=""
+                  data-local-path="./dist/assets/images/clients/c4.png"
+                  alt="client-4"
+                />
+              </div>
+              <div class="details">
+                <h5>Tom Leaker</h5>
+                <span>London, UK</span>
+                <div class="icons">
+                  <i class="fa-solid fa-splotch text-warning"></i>
+                  <i class="fa-solid fa-splotch text-warning"></i>
+                  <i class="fa-solid fa-splotch text-warning"></i>
+                  <i class="fa-solid fa-splotch text-warning"></i>
+                  <i class="fa-solid fa-splotch text-warning"></i>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
+                voluptas recusandae ex! Quis fugit, id dolore, facere nesciunt
+                ipsam, tempore repudiandae maxime
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Reviews -->
+    <!-- Start Stats -->
+    <div class="stats py-5">
+      <div class="row text-light gap-2 align-items-center text-center">
+        <div class="col-md-5 col-lg-2 flex-grow-1 fs-1 fw-bold p-3">
+          <span class="stats-num" data-target="90">0</span> K+
+          <span class="d-block fs-3">Listings</span>
+        </div>
+        <div class="col-md-5 col-lg-2 flex-grow-1 fs-1 fw-bold p-3">
+          <span class="stats-num" data-target="40">0</span> K+
+          <span class="d-block fs-3">Listings Categories</span>
+        </div>
+        <div class="col-md-5 col-lg-2 flex-grow-1 fs-1 fw-bold p-3">
+          <span class="stats-num" data-target="65">0</span> K+
+          <span class="d-block fs-3">Visitors</span>
+        </div>
+        <div class="col-md-5 col-lg-2 flex-grow-1 fs-1 fw-bold p-3">
+          <span class="stats-num" data-target="50">0</span> K+
+          <span class="d-block fs-3">Happy Clients</span>
+        </div>
+      </div>
+    </div>
+    <!-- End Stats -->
+    <!--Start Blog-->
+    <div class="blog" id="blog">
+      <div class="container py-5">
+        <div class="text-box py-5 text-center">
+          <h2 class="pt-5 text-uppercase fs-4">news and articles</h2>
+          <p class="text-capitalize">
+            Always upto date with our latest News and Articles
+          </p>
+        </div>
+        <div class="row justify-content-between gap-2">
+          <div class="card col-md-5 col-lg-3 flex-lg-grow-1 p-0 shodow-lg">
+            <img
+              src="https://ik.imagekit.io/hrim/ListRace/blog/b1.jpg?updatedAt=1732695793202"
+              class="card-img-top img-fluid"
+              alt="blog-1"
+              data-local-path="./dist/assets/images/blog/b1.jpg"
+            />
+            <div class="card-body text-start">
+              <a href="#" class="ts-5 text-decoration-none"
+                >How to find your Desired Place more quickly</a
+              >
+              <div class="py-3 d-flex justify-content-between">
+                Posted by
+                <a href="#" class="ts-5 text-decoration-none">ADMIN</a>| March
+                2018
+              </div>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div class="card col-md-5 col-lg-3 flex-lg-grow-1 p-0 shodow-lg">
+            <img
+              src="https://ik.imagekit.io/hrim/ListRace/blog/b2.jpg?updatedAt=1732695793262"
+              class="card-img-top img-fluid"
+              alt="blog-2"
+              data-local-path="./dist/assets/images/blog/b2.jpg"
+            />
+            <div class="card-body text-start">
+              <a href="#" class="ts-5 text-decoration-none"
+                >How to find your Desired Place more quickly</a
+              >
+              <div class="py-3 d-flex justify-content-between">
+                Posted by
+                <a href="#" class="ts-5 text-decoration-none">ADMIN</a>| March
+                2018
+              </div>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          <div class="card col-md-5 col-lg-3 flex-lg-grow-1 p-0 shodow-lg">
+            <img
+              src="https://ik.imagekit.io/hrim/ListRace/blog/b3.jpg?updatedAt=1732695793246"
+              class="card-img-top img-fluid"
+              alt="blog-3"
+              data-local-path="./dist/assets/images/blog/b3.jpg"
+            />
+            <div class="card-body text-start">
+              <a href="#" class="ts-5 text-decoration-none"
+                >How to find your Desired Place more quickly</a
+              >
+              <div class="py-3 d-flex justify-content-between">
+                Posted by
+                <a href="#" class="ts-5 text-decoration-none">ADMIN</a>| March
+                2018
+              </div>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End Blog-->
+    <!-- Start Contact -->
+    <div class="contact" id="contact">
+      <div class="container py-5 d-flex flex-column align-items-center">
+        <div class="text-box p-5 text-center">
+          <h1 class="text-uppercase fw-bold p-5">
+            do you want to add your business listing with us?
+          </h1>
+          <p class="text-capitalize fw-bold fs-5">
+            Listrace offer you to list your business with us and we very much
+            able to promote your Business
+          </p>
+        </div>
+        <form action="#" class="shadow-large text-center">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email here"
+            class="border-0 px-3 py-4 rounded mb-sm-3"
+            style="width: 400px"
+            autocomplete="off"
+          />
+          <input
+            type="submit"
+            value="Create Account"
+            class="border-0 px-3 py-4 fw-bold rounded"
+          />
+        </form>
+      </div>
+    </div>
+    <!-- End Contact -->
+    <!-- Start Footer -->
+    <div class="footer">
+      <div class="container py-5">
+        <div
+          class="top-row d-flex justify-content-between align-items-center pb-4"
+        >
+          <a class="navbar-brand fw-bold" href="#home"
+            >List<span>Race</span>
+          </a>
+          <ul class="navbar-nav d-flex flex-row gap-2">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#works">HOW IT WORKS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#explore">EXPLORE</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#review">REVIEW</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#blog">BLOG</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="bottom-row d-flex justify-content-between align-items-center gap-sm-3 pt-4"
+        >
+          <div>
+            &copy;Copyright.Designed And Developed By
+            <a href="#" class="text-decoration-none">Themesine</a>
+          </div>
+          <div class="social d-flex gap-2 align-items-center">
+            <span><i class="fa-solid fa-phone"></i> +1 (222) 777 8888</span>
+            <ul
+              class="d-flex flex-row gap-2 align-items-center list-unstyled m-0"
+            >
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Footer -->
+    <div class="up-button d-flex justify-content-center align-items-center">
+      <i class="fa-solid fa-chevron-up"></i>
+    </div>
+    <script src="./dist/js/all.min.js"></script>
+    <script src="./dist/js/index.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

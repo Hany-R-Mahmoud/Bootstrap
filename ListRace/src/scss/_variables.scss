@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Poppins", serif;
+}
+html {
+  scroll-padding-top: 88px;
+  scroll-behavior: smooth;
+}
+
+$red: #ff545a;
+$font-grey: #859098;
+$light-grey: #eef2f6;
